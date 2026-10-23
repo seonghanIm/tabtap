@@ -46,6 +46,18 @@ main {
 
 a { color: var(--accent); text-underline-offset: 3px; }
 
+/* 언어 바꾸기: 맨 위 오른쪽 */
+.langs {
+  text-align: right;
+  margin: -32px 0 24px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.langs a { color: var(--muted); text-decoration: none; }
+.langs a:hover { color: var(--text); }
+.langs strong { color: var(--text); font-weight: 600; }
+
 header .icon { border-radius: 16px; display: block; }
 
 h1 {
@@ -200,6 +212,7 @@ footer .beta { color: var(--text); }
 
 @media (max-width: 520px) {
   main { padding-top: 36px; }
+  .langs { margin-top: -20px; }
   h1 { font-size: 34px; }
   .intro { font-size: 18px; }
   .device { border-radius: 22px; padding: 8px; }
