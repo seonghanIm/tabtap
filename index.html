@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>taBtaP — 아이폰을 두 번째 키보드로</title>
+  <meta name="description" content="키보드 옆에 둔 아이폰으로 맥의 앱과 창을 바꾸고, 단축키를 한 번에 누르세요.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="taBtaP">
+  <meta property="og:description" content="키보드 옆에 둔 아이폰으로 맥의 앱과 창을 바꾸고, 단축키를 한 번에 누르세요.">
+  <meta property="og:image" content="icon.png">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="./">
+        <img src="icon.png" alt="">
+        <span class="wordmark">ta<span class="hi">B</span>ta<span class="hi">P</span></span>
+      </a>
+      <nav class="site">
+        <a href="#install">설치 방법</a>
+        <a href="#faq">자주 묻는 질문</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <img class="icon" src="icon.png" alt="taBtaP 앱 아이콘">
+        <h1>아이폰을<br>두 번째 키보드로</h1>
+        <p class="lead">키보드 옆에 둔 아이폰으로 맥의 앱과 창을 바꾸고, 자주 쓰는 단축키를 한 번에 누르세요.</p>
+        <div class="buttons">
+          <a class="button primary" href="download/taBtaP-Agent.dmg">
+            맥 에이전트 다운로드
+            <small>macOS 14 이상 · 무료</small>
+          </a>
+          <span class="button disabled" aria-disabled="true">
+            아이폰 앱
+            <small>App Store 출시 준비 중</small>
+          </span>
+        </div>
+        <p class="note">맥과 아이폰 모두에 설치해야 해요. 둘은 같은 와이파이에서 직접 연결돼요.</p>
+      </div>
+
+      <section>
+        <h2>할 수 있는 일</h2>
+        <div class="features">
+          <div class="card">
+            <span class="keycap hi">앱</span>
+            <h3>앱 바로 전환</h3>
+            <p>버튼 한 번에 원하는 앱이 앞으로 와요. 길게 누르면 그 앱의 창 목록이 나와서 창을 골라 바꿀 수 있어요.</p>
+          </div>
+          <div class="card">
+            <span class="keycap">⌘⇧K</span>
+            <h3>단축키 버튼</h3>
+            <p>맥에서 키를 눌러 녹화하면 끝이에요. 한 번 누르기, 여러 키 연속, 누르는 동안 유지를 고를 수 있어요.</p>
+          </div>
+          <div class="card">
+            <span class="keycap">☀︎</span>
+            <h3>음량과 밝기</h3>
+            <p>탭하면 슬라이더가 열려요. 외부 모니터 밝기도 지원하는 모델이면 조절돼요.</p>
+          </div>
+          <div class="card">
+            <span class="keycap">⌥</span>
+            <h3>편집은 맥에서</h3>
+            <p>버튼 구성은 맥 메뉴바에서 바꿔요. 바꾸면 아이폰에 바로 반영돼요.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="install">
+        <h2>설치 방법</h2>
+        <ol class="steps">
+          <li>
+            <strong>맥 에이전트를 내려받아 설치해요</strong>
+            <span>DMG를 열고 taBtaP를 "응용 프로그램" 폴더로 끌어다 놓아요. Apple 공증을 받은 앱이라 경고 없이 열려요.</span>
+          </li>
+          <li>
+            <strong>taBtaP를 실행해요</strong>
+            <span>메뉴바에 격자 모양 아이콘이 생기면 실행된 거예요. 로그인할 때 자동으로 켜져요.</span>
+          </li>
+          <li>
+            <strong>손쉬운 사용 권한을 허용해요</strong>
+            <span>창 전환과 단축키에 필요해요. 메뉴바 아이콘에서 안내를 누르고 시스템 설정 &gt; 개인정보 보호 및 보안 &gt; 손쉬운 사용에서 taBtaP를 켜요.</span>
+          </li>
+          <li>
+            <strong>아이폰과 연결해요</strong>
+            <span>맥 메뉴바에서 "아이폰 연결하기"를 누르고, 아이폰 앱에서 QR을 스캔하거나 6자리 코드를 입력해요.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>필요한 것</h2>
+        <ul class="plain">
+          <li>macOS 14 Sonoma 이상 (Apple 실리콘, 인텔 모두)</li>
+          <li>iOS 17 이상 아이폰</li>
+          <li>맥과 아이폰이 같은 와이파이에 연결돼 있을 것</li>
+        </ul>
+      </section>
+
+      <section id="faq">
+        <h2>자주 묻는 질문</h2>
+        <details>
+          <summary>인터넷이나 서버를 거치나요?</summary>
+          <p>아니요. 아이폰과 맥이 같은 네트워크 안에서 암호화된 연결로 직접 통신해요. 개발자 서버는 없고, 어떤 정보도 밖으로 보내지 않아요.</p>
+        </details>
+        <details>
+          <summary>아이폰에서 맥에 아무 명령이나 보낼 수 있나요?</summary>
+          <p>아니요. 아이폰은 "몇 번 버튼을 눌렀다"는 신호만 보내고, 그 버튼이 하는 일은 맥에서 정한 것만 실행돼요. 페어링하지 않은 기기는 연결할 수 없어요.</p>
+        </details>
+        <details>
+          <summary>단축키 버튼이 동작하지 않아요</summary>
+          <p>맥에서 손쉬운 사용 권한이 켜져 있는지 확인해 주세요. 비밀번호 입력란에 커서가 있을 때는 macOS가 보안 입력을 켜서 실행되지 않아요.</p>
+        </details>
+        <details>
+          <summary>외부 모니터 밝기가 조절되지 않아요</summary>
+          <p>모니터가 DDC/CI를 지원해야 해요. 모니터 메뉴에서 DDC/CI를 켜 보세요. 일부 모델이나 연결 방식에서는 지원되지 않아요.</p>
+        </details>
+        <details>
+          <summary>삭제하려면 어떻게 하나요?</summary>
+          <p>맥 메뉴바에서 taBtaP를 종료하고 응용 프로그램 폴더에서 taBtaP를 휴지통으로 옮기면 돼요. 버튼 설정은 ~/Library/Application Support/TabTap 폴더에 있어요.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site">
+      <p>문의: <a href="mailto:tjdgksdl1120@gmail.com">tjdgksdl1120@gmail.com</a> · <a href="privacy.html">개인정보 처리방침</a></p>
+      <p>© 2026 taBtaP</p>
+    </footer>
+  </div>
+</body>
+</html>
