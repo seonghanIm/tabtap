@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー — taBtaP</title>
+  <meta name="description" content="プライバシーポリシー">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="taBtaP">
+  <meta property="og:description" content="プライバシーポリシー">
+  <meta property="og:image" content="../icon.png">
+  <link rel="alternate" hreflang="en" href="../privacy.html">
+  <link rel="alternate" hreflang="ko" href="../ko/privacy.html">
+  <link rel="alternate" hreflang="ja" href="../ja/privacy.html">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main class="doc">
+  <p class="back"><a href="./">← taBtaP のトップへ</a></p>
+  <h1>プライバシーポリシー</h1>
+  <p class="note">施行日：2026-10-23</p>
+    <p>このポリシーは taBtaP の iPhone アプリと Mac エージェントに適用されます。開発者はサーバーを運営しておらず、アプリが開発者に個人情報を送ることはありません。iPhone アプリの広告は Google AdMob が提供し、3 に記載の情報は Google が取り扱います。</p>
+    <h2>1. iPhone と Mac の間の通信</h2>
+    <p>iPhone アプリと Mac エージェントは同じローカルネットワーク内で直接つながり、ペアリング時に作った鍵で暗号化します。iPhone は押したボタンの番号とスライダーの値だけを送り、Mac はボタンの構成と実行結果を返します。これらの情報は2台の外に出ません。</p>
+    <h2>2. デバイスに保存される情報</h2>
+    <p><strong>Mac</strong>：ボタンの構成、接続した iPhone の一覧（デバイス名とペアリング鍵）、エージェントの設定 — <code>~/Library/Application Support/TabTap</code>。<br><strong>iPhone</strong>：接続した Mac の情報とペアリング鍵（キーチェーン）、Mac から受け取ったボタンの構成、外観モード、広告を表示した時刻、広告削除の購入有無。<br>アプリや上記フォルダを削除すると一緒に削除されます。</p>
+    <h2>3. 広告（iPhone アプリ）</h2>
+    <p>iPhone アプリは Google AdMob でバナー広告と全画面広告を表示します。広告の配信と測定のため、Google はデバイス識別子（許可した場合は広告識別子）、IP アドレスから推定したおおよその位置、広告の表示・タップ情報、アプリの利用・診断情報を収集することがあります。パーソナライズ広告のためのトラッキングは、iOS の<em>トラッキングの許可</em>で許可した場合のみ行われます。EEA などの地域では同意画面で選択でき、アプリの ⋯ メニューからあとで変更できます。詳しくは <a href="https://policies.google.com/technologies/partner-sites">Google によるパートナーサイト・アプリの情報の使用</a>をご覧ください。</p>
+    <h2>4. 購入</h2>
+    <p>広告削除の購入は Apple App Store が処理します。開発者は支払い情報を受け取らず、購入したかどうかだけをデバイス上で確認します。</p>
+    <h2>5. 権限</h2>
+    <p><strong>ローカルネットワーク</strong>：同じ Wi-Fi の Mac を探して接続するためだけに使います。<br><strong>カメラ（iPhone）</strong>：接続用 QR コードを読み取るためだけに使い、写真や動画を保存・送信しません。<br><strong>アクセシビリティ（Mac）</strong>：ウインドウの一覧を読み取って切り替え、ボタンに設定したキーを押すためだけに使います。画面の内容や入力した文字は記録しません。<br><strong>トラッキング（iPhone）</strong>：パーソナライズ広告のためだけに使います。許可しなくてもアプリは同じように使えます。</p>
+    <h2>6. 子ども</h2>
+    <p>taBtaP は13歳未満の子どもを対象としていません。</p>
+    <h2>7. 変更</h2>
+    <p>このポリシーを変更する場合は、このページで施行日とともにお知らせします。</p>
+    <h2>8. お問い合わせ</h2>
+    <p>個人情報に関するお問い合わせは <a href="mailto:tjdgksdl1120@gmail.com">tjdgksdl1120@gmail.com</a> までお送りください。</p>
+  <footer>
+    <p class="beta">ベータ版です。機能や構成は今後変わることがあります。</p>
+    <p>seonghanIm が作っています。不便な点や欲しい機能はメールで教えてください。</p>
+    <p>お問い合わせ: <a href="mailto:tjdgksdl1120@gmail.com">tjdgksdl1120@gmail.com</a> · <a href="../ja/privacy.html">プライバシーポリシー</a></p>
+    <p class="langs">言語: <a href="../" data-lang="en">English</a> · <a href="../ko/" data-lang="ko">한국어</a> · <strong>日本語</strong></p>
+    <p>© 2026 seonghanIm</p>
+  </footer>
+  <script>
+  document.querySelectorAll('[data-lang]').forEach(function (a) {
+    a.addEventListener('click', function () { try { localStorage.setItem('lang', a.dataset.lang); } catch (e) {} });
+  });
+  </script>
+</main>
+</body>
+</html>
