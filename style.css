@@ -202,7 +202,6 @@ footer {
 
 footer p { margin: 0 0 6px; }
 footer a { color: var(--muted); }
-footer .beta { color: var(--text); }
 
 .doc h1 { font-size: 32px; margin-top: 8px; }
 .doc h2 { font-size: 19px; margin: 32px 0 6px; }
